@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_add_compte"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context=".MainActivity">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInput_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/serverip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adresse IP. Exemple: 127.0.0.1"
+            android:inputType="phone"
+            android:textColor="@color/colorPrimaryDark" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="false">
+
+        <EditText
+            android:id="@+id/espip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IP ESP8266. Exmple: 192.168.0.0"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_add_account"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="Add_account"
+        android:text="Connecter"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

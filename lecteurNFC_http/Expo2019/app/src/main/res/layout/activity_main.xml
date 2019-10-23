@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LECTEUR PRESENCE"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ipay" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/serverip"
+                android:textColorHint="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:hint="Server Ip : 0.0.0.0"/>
+            <EditText
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/espip"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:hint="IP ESP8266 0.0.0.0"/>
+            <Button
+                android:visibility="gone"
+                android:id="@+id/connect"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="Connect"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
